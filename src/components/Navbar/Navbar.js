@@ -33,7 +33,7 @@ function Navbar() {
         />
       )}
       <div className="nav-name">
-        <h3 className="navbarName">Weather360</h3>
+        <h3 className="navbarName">Weather Forecast</h3>
       </div>
       {isHomePage ? (
         <div className="search-container">

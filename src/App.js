@@ -24,7 +24,7 @@ function App() {
             <>
               { isLoading && <div className="heading">Loading....</div> }
               { error && <p className="heading">{error}</p>}
-              {!isLoading && !error && <p className="heading">Popular Cities</p>}
+              {!isLoading && !error && <p className="heading">Capital Cities</p>}
               <div className="grid">
                 <Home />
               </div>
