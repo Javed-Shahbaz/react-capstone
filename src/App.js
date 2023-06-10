@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { fetchWeatherData } from './redux/Home/weatherslice';
 import Home from './components/Home/Home';
+// eslint-disable-next-line
 import Details from './components/Details';
 import Navbar from './components/Navbar/Navbar';
 import './index.css';
