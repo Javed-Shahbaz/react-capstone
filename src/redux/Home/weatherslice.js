@@ -43,6 +43,7 @@ const weatherSlice = createSlice({
         error: null,
       }))
       .addCase(fetchWeatherData.rejected, (state, action) => {
+        // eslint-disable-next-line
         console.log(action.error.message);
         return {
           ...state, data: [], isLoading: false, error: action.error.message,
