@@ -2,18 +2,15 @@ import React from 'react';
 import { AiFillSetting } from 'react-icons/ai';
 import { IoSearch } from 'react-icons/io5';
 import { FaMicrophone } from 'react-icons/fa';
-import logo from '../../assets/weatherlogo.png';
-import './Nav.css';
+
+import './Navbar.css';
 
 function Navbar() {
   return (
     <nav>
       <AiFillSetting className="settingIcon" />
       <div className="nav-name">
-        <h3 className="name">Weather36</h3>
-        <span className="nav-logo">
-          <img className="logo" src={logo} alt="logo" />
-        </span>
+        <h3 className="name">Weather Forcast</h3>
       </div>
       <div className="search-container">
         <input type="text" className="search-input" />
