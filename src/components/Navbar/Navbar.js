@@ -10,7 +10,7 @@ function Navbar() {
     <nav>
       <AiFillSetting className="settingIcon" />
       <div className="nav-name">
-        <h3 className="navbarName">Weather Forcast</h3>
+        <h3 className="navbarName">Weather Forecast</h3>
       </div>
       <div className="search-container">
         <input type="text" className="search-input" />
