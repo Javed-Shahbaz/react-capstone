@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.weather-logo {
+.logo {
   height: 4rem;
 }
 
@@ -12,31 +12,31 @@
   align-items: center;
 }
 
-.temperature {
+.temp {
   font-size: 1rem;
 }
 
-.home-main {
+.h-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: #a990d4;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #bbb34b;
+  box-shadow: 0 2px 4px rgba(139, 134, 134, 0.1);
 }
 
-.city-country {
+.country {
   display: flex;
   flex-direction: column;
   align-items: baseline;
 }
 
-.small {
+.celcius {
   font-size: 0.6em;
 }
 
-.name {
+.c-name {
   font-size: 1.2rem;
 }
 
@@ -62,6 +62,7 @@
     margin-bottom: 5%;
   }
 }
+
 @media (min-width: 500px) {
   .grid {
     display: grid;
@@ -77,7 +78,7 @@
     font-size: 2rem;
   }
 
-  .name {
+  .c-name {
     font-size: 1.5rem;
   }
 
@@ -85,28 +86,7 @@
     font-size: 1.5rem;
   }
 
-  .weather-logo {
+  .logo {
     height: 6rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  .weather-logo {
-    height: 8rem;
-  }
-
-  .temperature {
-    font-size: 2rem;
-  }
-
-  .home-main {
-    padding: 10px 40px;
-    border-radius: 20px;
-  }
-}
-
-@media (min-width: 1530px) {
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }

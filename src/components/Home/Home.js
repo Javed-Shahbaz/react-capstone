@@ -46,7 +46,7 @@ function Home() {
         const weatherImage = weatherImages[weatherCondition];
         return (
           <div
-            className="home-main"
+            className="h-main"
             tabIndex={0}
             onClick={() => ClickHandler(weatherImage, city)}
             onKeyDown={(e) => {
@@ -60,21 +60,21 @@ function Home() {
             <div className="img-tem">
               <span>
                 <img
-                  className="weather-logo"
+                  className="logo"
                   src={weatherImage}
                   alt={city.name}
                 />
               </span>
-              <div className="tem-condition">
-                <p className="temperature">
+              <div className="tem-cond">
+                <p className="temp">
                   {city.main.temp}
-                  <sup className="small">°c</sup>
+                  <sup className="celcius">°c</sup>
                 </p>
                 <p className="condition">{city.weather[0].main}</p>
               </div>
             </div>
-            <div className="city-country">
-              <p className="name">{city.name}</p>
+            <div className="country">
+              <p className="c-name">{city.name}</p>
             </div>
           </div>
         );
