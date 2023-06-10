@@ -5,7 +5,7 @@ const key = 'fe35aab220ffb69b8fb5eef45d5615d1';
 const url = 'https://api.openweathermap.org/data/2.5/weather';
 
 export const fetchWeatherData = createAsyncThunk('weather/fetchData', async (city) => {
-  const cities = city ? [city] : ['islamabad', 'Dehli', 'colombo', 'Beijing', 'Washington DC', 'Ottawa', 'Tokyo', 'london'];
+  const cities = city ? [city] : ['islamabad', 'Delhi', 'colombo', 'Beijing', 'Washington DC', 'Ottawa', 'Tokyo', 'london'];
   const requests = cities.map((city) => {
     const params = {
       q: city,
