@@ -26,21 +26,21 @@ function Navbar() {
   return (
     <nav>
       {isHomePage ? (
-        <AiFillSetting className="settingIcon" />
+        <AiFillSetting className="setIcon" />
       ) : (
         <IoChevronBackCircleSharp
-          className="settingIcon"
+          className="setIcon"
           onClick={handleIconClick}
         />
       )}
-      <div className="nav-name">
-        <h3 className="navbarName">Weather Forecast</h3>
+      <div className="navName">
+        <h3 className="nbarName">Weather Forecast</h3>
       </div>
-      <div className="search-container">
+      <div className="search-box">
         <input
           type="text"
-          placeholder="search"
-          className="search-input"
+          placeholder="Enter city name here"
+          className="s-input"
           onKeyDown={(e) => {
             if (e.key === 'Enter') {
               clickHandle(value);
@@ -52,7 +52,7 @@ function Navbar() {
         <span className="search-icon">
           <IoSearch onClick={() => clickHandle(value)} />
         </span>
-        <FaMicrophone className="microphone" />
+        <FaMicrophone className="mic" />
       </div>
     </nav>
   );
