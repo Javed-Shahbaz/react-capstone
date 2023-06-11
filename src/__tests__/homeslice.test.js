@@ -1,5 +1,4 @@
 import weatherreducer, { fetchWeatherData } from '../redux/Home/weatherslice';
-
 describe('weatherreducer', () => {
   test('should handle fetchWeatherData.pending', () => {
     const initialState = {
