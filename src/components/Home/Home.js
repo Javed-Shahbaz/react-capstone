@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import { fetchWeatherData } from '../../redux/Home/weatherslice';
 import { selectCity } from '../../redux/details/detailSlice';
 import clear from '../../assets/clear.png';
 import clouds from '../../assets/clouds.png';
@@ -32,19 +31,11 @@ const weatherImages = {
 
 function Home() {
   const navigate = useNavigate();
-  const { data, isLoading } = useSelector((state) => state.weather);
+  const { data } = useSelector((state) => state.weather);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchWeatherData());
-  }, [dispatch]);
-
-  if (isLoading) {
-    return <div>Loading......</div>;
-  }
-
-  const ClickHandler = (city) => {
-    dispatch(selectCity(city));
+  const ClickHandler = (weatherImage, city) => {
+    dispatch(selectCity({ weatherImage, city }));
     navigate('/details');
   };
 
@@ -55,9 +46,9 @@ function Home() {
         const weatherImage = weatherImages[weatherCondition];
         return (
           <div
-            className="home-main"
+            className="h-main"
             tabIndex={0}
-            onClick={() => ClickHandler(city)}
+            onClick={() => ClickHandler(weatherImage, city)}
             onKeyDown={(e) => {
               if (e.key === 'Enter') {
                 navigate('/details');
@@ -69,21 +60,21 @@ function Home() {
             <div className="img-tem">
               <span>
                 <img
-                  className="weather-logo"
+                  className="logo"
                   src={weatherImage}
                   alt={city.name}
                 />
               </span>
-              <div className="tem-condition">
-                <p className="temperature">
+              <div className="tem-cond">
+                <p className="temp">
                   {city.main.temp}
-                  <sup className="small">°c</sup>
+                  <sup className="celcius">°c</sup>
                 </p>
                 <p className="condition">{city.weather[0].main}</p>
               </div>
             </div>
-            <div className="city-country">
-              <p className="name">{city.name}</p>
+            <div className="country">
+              <p className="c-name">{city.name}</p>
             </div>
           </div>
         );

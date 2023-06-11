@@ -1,23 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { AiFillSetting } from 'react-icons/ai';
-import { IoSearch } from 'react-icons/io5';
+import { IoSearch, IoChevronBackCircleSharp } from 'react-icons/io5';
 import { FaMicrophone } from 'react-icons/fa';
-
 import './Navbar.css';
+import { fetchWeatherData } from '../../redux/Home/weatherslice';
 
 function Navbar() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const clickHandle = (value) => {
+    navigate('/');
+    dispatch(fetchWeatherData(value));
+  };
+
+  const [value, setvalue] = useState('');
+  const isHomePage = location.pathname === '/';
+
+  const handleIconClick = () => {
+    navigate('/');
+  };
+
   return (
     <nav>
-      <AiFillSetting className="settingIcon" />
-      <div className="nav-name">
-        <h3 className="navbarName">Weather Forecast</h3>
+      {isHomePage ? (
+        <AiFillSetting className="setIcon" />
+      ) : (
+        <IoChevronBackCircleSharp
+          className="setIcon"
+          onClick={handleIconClick}
+        />
+      )}
+      <div className="navName">
+        <h3 className="nbarName">Weather Forecast</h3>
       </div>
-      <div className="search-container">
-        <input type="text" className="search-input" />
+      <div className="search-box">
+        <input
+          type="text"
+          placeholder="Enter city name here"
+          className="s-input"
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              clickHandle(value);
+            }
+          }}
+          value={value}
+          onChange={(e) => setvalue(e.target.value)}
+        />
         <span className="search-icon">
-          <IoSearch />
+          <IoSearch onClick={() => clickHandle(value)} />
         </span>
-        <FaMicrophone className="microphone" />
+        <FaMicrophone className="mic" />
       </div>
     </nav>
   );
