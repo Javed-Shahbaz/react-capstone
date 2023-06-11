@@ -39,8 +39,7 @@ Weather forecast, a web application that offers precise weather information arou
 <!-- Features -->
 
 ## 🚀 Live Demo <a name="protfolio-project"></a>
- 
-https://shimmering-heliotrope-f0efd9.netlify.app/
+- I deploy this site using github pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
