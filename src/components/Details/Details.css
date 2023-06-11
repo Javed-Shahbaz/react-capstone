@@ -3,12 +3,12 @@
   margin: 0;
 }
 
-.details-main {
+.det-main {
   height: 100vh;
   background-color: rgba(3, 3, 3, 0.2);
 }
 
-.upper {
+.up {
   padding: 5% 10%;
 }
 
@@ -22,12 +22,12 @@
   height: 8rem;
 }
 
-.country-city {
+.c-city {
   font-size: 1rem;
   color: #e8e2f3;
 }
 
-.temperature-details {
+.temp-details {
   font-size: 3rem;
   font-weight: bold;
   color: #e8e2f3;
@@ -38,7 +38,7 @@
   color: #e8e2f3;
 }
 
-.temp-condition {
+.temp-cond {
   display: flex;
   flex-direction: column;
 }
@@ -91,11 +91,11 @@
     height: 8rem;
   }
 
-  .country-city {
+  .c-city {
     font-size: 2rem;
   }
 
-  .temperature-details {
+  .temp-details {
     font-size: 4rem;
   }
 
@@ -121,7 +121,7 @@
     height: 10rem;
   }
 
-  .temperature-details {
+  .temp-details {
     font-size: 6rem;
   }
 

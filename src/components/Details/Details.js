@@ -11,20 +11,20 @@ function Details() {
   return (
     <>
       {data && data.city ? (
-        <div className="details-main">
-          <div className="upper">
-            <p className="country-city">
+        <div className="det-main">
+          <div className="up">
+            <p className="c-city">
               {data.city.name}
               ,
               {data.city.sys.country}
             </p>
             <div className="img-temp">
-              <div className="temp-condition">
-                <span className="temperature-details">
+              <div className="temp-cond">
+                <span className="temp-details">
                   {data.city.main.temp}
                   &deg;C
                 </span>
-                <span className="condition-details">
+                <span className="cond-details">
                   {data.city.weather[0].description}
                 </span>
               </div>
