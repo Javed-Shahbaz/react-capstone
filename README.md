@@ -39,7 +39,7 @@ Weather forecast, a web application that offers precise weather information arou
 <!-- Features -->
 
 ## 🚀 Live Demo <a name="protfolio-project"></a>
-- I deploy this site using github pages.
+- https://deploy-preview-5--kaleidoscopic-lokum-b9ad1a.netlify.app/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
