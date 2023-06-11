@@ -45,7 +45,7 @@ Weather forecast, a web application that offers precise weather information arou
 
  📼 Project Walkthrough <a name="project-walk"></a>
 
-https://www.loom.com/share/
+https://www.loom.com/share/208b4bc5dbf441319a72ae7cce8bf611
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
