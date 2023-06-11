@@ -38,42 +38,42 @@ function Details() {
             </div>
           </div>
           <div className="lower">
-            <div className="humidity">
-              <p className="lower-header">
+            <div className="humid">
+              <p className="low-header">
                 <WiHumidity className="Icons" />
                 Humidity
               </p>
-              <span className="lower-value">
+              <span className="low-value">
                 {data.city.main.humidity}
                 %
               </span>
             </div>
-            <div className="humidity">
-              <p className="lower-header">
+            <div className="humid">
+              <p className="low-header">
                 <RiWindyFill className="Icons" />
-                wind
+                Wind
               </p>
-              <span className="lower-value">
+              <span className="low-value">
                 {data.city.wind.speed}
                 %
               </span>
             </div>
-            <div className="humidity">
-              <p className="lower-header">
+            <div className="humid">
+              <p className="low-header">
                 <FaTachometerAlt className="Icons" />
                 Pressure
               </p>
-              <span className="lower-value">
+              <span className="low-value">
                 {data.city.main.pressure}
                 (hPa)
               </span>
             </div>
-            <div className="humidity">
-              <p className="lower-header">
+            <div className="humid">
+              <p className="low-header">
                 <FaEye className="Icons" />
                 Visibility
               </p>
-              <span className="lower-value">
+              <span className="low-value">
                 {data.city.visibility}
                 m
               </span>

@@ -33,9 +33,9 @@
   color: #e8e2f3;
 }
 
-.condition-details {
+.cond-details {
   font-size: 1.5rem;
-  color: #e8e2f3;
+  color: #fff;
 }
 
 .temp-cond {
@@ -50,22 +50,22 @@
   font-size: 1rem;
 }
 
-.humidity {
+.humid {
   display: flex;
   align-items: center;
   padding: 30px;
   border: 1px solid white;
   justify-content: space-between;
-  background-color: rgba(3, 3, 3, 0.2);
+  background-color: rgba(212, 12, 12, 0.2);
   border-radius: 10px;
 }
 
-.lower-value {
-  font-size: 1rem;
+.low-value {
+  font-size: 1.5em;
   color: #fff;
 }
 
-.lower-header {
+.low-header {
   color: #fff;
   font-size: 1.5rem;
   display: flex;

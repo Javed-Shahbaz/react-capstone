@@ -37,7 +37,9 @@
 }
 
 .c-name {
-  font-size: 1.2rem;
+  font-size: 1.2em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 1000;
 }
 
 .heading {
@@ -79,7 +81,7 @@
   }
 
   .c-name {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 
   .temperature {
